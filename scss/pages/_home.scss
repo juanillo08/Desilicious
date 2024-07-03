@@ -42,7 +42,10 @@
         }
     }
     &__wrapper{
+        @include mediaQuery(520px);
+            grid-template-columns: 1fr;
         @include grid(3, 1rem);
+        
         img{
             width: 17rem;
         }        
@@ -86,6 +89,8 @@
      }
 }
 
+// 
+
 // Explroe Menu
 .exploreMenu{
     &__title{
@@ -94,6 +99,10 @@
         margin-bottom: 2rem;
     }
     &__wrapper{
+        @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
+    
         @include grid(2, 1rem);
         justify-content: center;
     }
@@ -110,6 +119,9 @@
         }
         p{
             margin-bottom: 2rem;
+            br{
+                display: none;
+            }
         }
     }
 }
@@ -122,11 +134,20 @@
       url(../../IMG/book\ a\ table\ bg.jpg);
         @include bgImgSize;
         height: 120vh;
+        @include mediaQuery(520px);
+        background: none;
+        height: auto;
+      
+     
     }
     &__table{
         padding: 5rem;
         width: 60rem;
         height: 45rem;
+        @include mediaQuery(520px){
+            width: 100rem;
+            padding: 0;
+        }
         h4{
             font-size: 2rem;
         }
@@ -191,10 +212,26 @@
         }
     }
 }
-
+// VIDEO
 .video{
     &__wrapper{
         @include centerAll;
         
     }
+}
+
+
+// BLOG
+.blog{
+ &__wrapper{
+    @include grid(3, 4rem);
+    @include mediaQuery(520px){
+        grid-template-columns: 1fr;
+    }
+ }
+ &__text{
+    h3{
+        font-size: 1.5rem;
+    }
+ }
 }

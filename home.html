@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- SLIDER -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header bg--dark position--fixed ">
+    <header class="header bg--dark ">
         <div class="container">
             <div class="header__wrapper">
                 <img src="./IMG/81240106-logo1.png" alt="">
                 <nav>
                     <div class="header__nav">
                         <ul class="header__nav">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Chefs</a></li>
-                            <li><a href="">Product</a></li>
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./menu.html">Menu</a></li>
+                            <li><a href="./Chefs.html">Chefs</a></li>
+                            <li><a href="./products.html">Product</a></li>
                             <li><a href="">Blogs</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
+                <div class="toggle__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -34,7 +40,7 @@
     <!-- Banner -->
      <section class="homeBanner bg--dark">
         <div class="container">
-            <div class="homeBanner__wrapper">
+            <div class="homeBanner__wrapper" data-aos="fade-up">
                 <h4> IRRESISTIBLY GOOD</h4>
                 <h1>The Rich Taste of Indian Flavors</h1>
                 <p class="mb--3">Enjoy the taste of the best and most authentic Indian cuisines that are guaranteed to make <br> you want more with each bite!</p>
@@ -57,7 +63,7 @@
                 </p>
             </div>
             <div class="homeMenu__wrapper">
-                <div class="homeMenu__card">
+                <div class="homeMenu__card" data-aos="fade-up">
                     <img src="./IMG/rice.png" alt="">
                     <div class="homeMenu__text">
                         <h3> The Rice Menu</h3>
@@ -65,7 +71,7 @@
                         <a href="" class=" btn bg--outline">View All Items</a>
                     </div>
                 </div>
-                <div class="homeMenu__card">
+                <div class="homeMenu__card"  data-aos="fade-up">
                     <img src="./IMG/rice.png" alt="">
                     <div class="homeMenu__text">
                         <h3> The Rice Menu</h3>
@@ -73,7 +79,7 @@
                         <a href=""class=" btn bg--outline">View All Items</a>
                     </div>
                 </div>
-                <div class="homeMenu__card">
+                <div class="homeMenu__card"  data-aos="fade-up">
                     <img src="./IMG/rice.png" alt="">
                     <div class="homeMenu__text">
                         <h3> The Rice Menu</h3>
@@ -101,7 +107,6 @@
             </div>
         </div>
       </section>
-
 
       <!-- HOME EXPLORE MENU -->
        <section class="exploreMenu bg--primary py--5">
@@ -270,7 +275,96 @@
                 </div>
             </div>
          </section>
+
+         <!-- BLOG -->
+         <section class="blog bg--primary py--5">
+            <div class="container">
+                <div class="blog__title t-align--center">
+                    <h2 class="title">From Our Blog</h2>
+                    <p class="mb--2">Keep up with latest food, new items, and other updates and news from <br> our fun blogs and articles that explore the world of indian cuisine.</p>
+                </div>
+                    <div class="blog__wrapper">
+                        <div class="blog__card">
+                            <img src="./IMG/ramen.png" alt="">
+                            <div class="blog__text ">
+                                <h3 class="py--1">An Indian Version of Ramen</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil quas fugiat corporis atque veniam dolore eos corrupti harum culpa?</p>
+                            </div>
+                        </div>
+           
+                  
+                        <div class="blog__card">
+                            <img src="./IMG/pasta.jpg" alt="">
+                            <div class="blog__text">
+                                <h3 class="py--1">Art of Making Pasta Perfectly</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil quas fugiat corporis atque veniam dolore eos corrupti harum culpa?</p>
+                            </div>
+                        </div>
+              
+                   
+                        <div class="blog__card">
+                            <img src="/IMG/chicken at home.jpg" alt="">
+                            <div class="blog__text">
+                                <h3 class="py--1">Make Grilled Chicken at Home</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil quas fugiat corporis atque veniam dolore eos corrupti harum culpa?</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+         </section>
+
+         <!-- Footer -->
+         <footer class="footer  bg--dark pt--5 pb--2">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <!-- UL 1 -->
+                    <ul>
+                        <li><img src="./IMG/81240106-logo1.png" alt=""></li>
+                        <li><span>Phone: </span>407-509-3647</li>
+                        <li><span>Mail:  </span>boydila@support.com</li>
+                        <li><span>Address:  </span>16621 Collins street West Philippines Sea of Marawi</li>
+                    </ul>
+                    <!-- UL 2 -->
+                     <ul>
+                        <li><h4 class="mb--2">Useful Link</h4></li>
+                        <li>About Us</li>
+                        <li>Food Menu</li>
+                        <li>My Account</li>
+                        <li>List a Item</li>
+                     </ul>
+                     <!-- UL 3 -->
+                     <ul>
+                        <li><h4 class="mb--2">Community</h4></li>
+                        <li>Map</li>
+                        <li>Store Location</li>
+                        <li>Photography</li>
+                        <li>Games</li>
+                        <li>Music</li>
+                     </ul>
+                     <!-- Last -->
+                      <div class="footer__lastPart">
+                       <h4 class="mb--2">Community</h4>
+                        <div class="footer__subscribe">
+                            <input type="text" placeholder="Your Email Address">
+                            <a href="" class="btn bg--footer">Subscribe</a>
+                        </div>
+                        <ul class="footer__social">
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                      </div>
+                </div>
+                <p>Copyright 2022. Power by Web Development</p>
+            </div>
+         </footer>
+         <script src="./js/toggleMenu.js"></script>
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
          <script src="./js/slider.js"></script>
+         <script>
+            AOS.init();
+          </script>
 </body>
 </html>

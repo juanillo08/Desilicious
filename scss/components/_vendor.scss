@@ -1,6 +1,13 @@
 @use "../abstract/" as*;
 @use "../base/" as*;
 
+
+
+.testimonial{
+    @include mediaQuery(520px){
+        margin-top: -9rem;
+    }
+}
 .tns-outer{
     overflow: hidden;
     max-width: 70rem;
@@ -17,6 +24,10 @@
         height: 1rem;
         border-radius: 50%;
         border: none;
+        @include mediaQuery(520px){
+            width: .5rem;
+            height: .5rem;
+        }
         }
         &-active{
             background-color: $clr--secondary;
@@ -24,6 +35,9 @@
 }
 #controls{
     position: absolute;
+    @include mediaQuery(520px){
+        display: none;
+    }
 }
 .prev{
     color: $clr--secondary;

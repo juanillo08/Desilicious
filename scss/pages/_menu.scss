@@ -1,0 +1,52 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+// Explroe Menu
+.beefMenu{
+    &__title{
+        @include centerAll;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    &__wrapper{
+        @include mediaQuery(520px){
+            grid-template-columns: 1fr;
+        }
+    
+        @include grid(2, 1rem);
+        justify-content: center;
+    }
+    &__content{
+        max-width: 30rem;
+        margin:  0 auto;
+        ul{
+            @include between;
+            li{
+                color: $clr--secondary;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+        p{
+            margin-bottom: 2rem;
+            br{
+                display: none;
+            }
+        }
+    }
+}
+// Beef Img
+.beefImg{
+    @include centerAll;
+    &__item{         
+        
+        img:first-child{
+            width: 68rem;
+            border-radius: 3rem;
+            transform: translateY(-7rem);
+        }  
+    }  
+}
+ 
+    

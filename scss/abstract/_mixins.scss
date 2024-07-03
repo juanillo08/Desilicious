@@ -25,7 +25,7 @@
     object-position: center center;
 }
 // Grid
-@mixin  grid($cols, $gap){
+@mixin grid($cols, $gap){
     display: grid;
     grid-template-columns: repeat($cols, 1fr);
     gap: $gap;
@@ -38,7 +38,7 @@ $desktop: 1024;
 
 
 @mixin mobile{
-    @media (min-width: #{$mobile}) {
+    @media (max-width: #{$mobile}) {
         @content;
     }
 }

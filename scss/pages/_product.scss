@@ -1,0 +1,41 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+
+
+
+.product{
+    padding: 10rem 0;
+    &__wrapper{
+        @include grid(3, 4rem);
+    }
+    &__card{
+
+        border: 2px solid $clr--secondary;
+        border-radius: 3rem;
+        height: 27rem;
+        padding: 2rem;
+        text-align: center;
+       
+        img{            
+            width: 15rem;
+        }
+        h5{      
+          font-size: 1.5rem;
+        }
+        p{      
+            padding-bottom: 2rem;
+            color: $clr--secondary;
+        }
+        a{
+          border: 1px solid $clr--secondary;
+          background-color: transparent;
+          color: $clr--light;
+          border-radius: 2rem;
+          padding: 1rem;
+          margin: 0 auto;      
+        }
+    }
+}
+
+
